@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;      
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: lightblue;
+}
+
+
+main {
+   
+    width: 83%;
+    margin: 0 auto;
+    margin-top: 55px;   
+}
+
+h1 {
+    font-size: 2.5em;
+    color: hsl(0, 6%, 24%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+}
+
+h1 span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+p {
+    font-size: .875em;
+    color: hsl(0, 36%, 70%);
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 15px;
+}
+
+.email {
+    position: relative;
+    width: 100%;
+  
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    margin-top: 35px;
+    outline: none;
+    width: 99%;
+    height: 50px;
+    color: hsl(0, 80%, 86%);       /*hsl(0, 36%, 70%);*/
+    border-radius: 50px;
+    border: 1px solid hsl(0, 36%, 70%); 
+    text-indent: 2em;
+}
+
+button {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    margin-top: 35px;
+    width: 23%;
+    height: 51.65px;
+    border-radius: 50px;
+    font-size: 1.5em;
+    color: white;
+    background-image: linear-gradient(to right, rgba(248, 90, 90, 0), rgba(248, 135, 135, 1));
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px 0px hsl(0, 39%, 91%);
+}
+
+footer {
+    margin-top: 50px;
+}
+
+/*====================================================================
+ Media Queries
+==================================================================== */
+
+@media all and (min-width: 768px) {
+    .image img {
+        width: 100%;
+        height: auto;    
+    }
+}
