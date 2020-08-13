@@ -19,10 +19,15 @@ body {
 }
 
 .image img {
+   
     width: 100%;
     height: auto;
     object-fit: cover;
     background-color: lightblue;
+}
+
+aside {
+    display: none;
 }
 
 
@@ -96,13 +101,72 @@ footer {
     margin-top: 50px;
 }
 
+
 /*====================================================================
  Media Queries
 ==================================================================== */
 
+/*------------------------- Tabets ---------------------------------*/
 @media all and (min-width: 768px) {
     .image img {
         width: 100%;
         height: auto;    
     }
+}
+
+/*------------------------------- Desktop -----------------------------*/
+@media all and (min-width: 1200px) {
+    body {
+            
+    }
+
+    .logo {
+        width: 25%;
+        margin-left: 140px;
+        
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+       
+    }
+        
+    .left {
+        float: left;
+        width: 50%;
+        margin-left: 30px;
+        margin-top: 60px;  
+        background-color: lightblue;
+    }
+
+    main {
+        background-color: lightpink;
+        width: 70%;
+        
+    }
+
+    h1 {
+        text-align: left;
+       
+        font-size: 4.5em;
+        
+    }
+
+    p {
+        text-align: left;
+        font-size: 1.5em;
+       
+    }
+
+    .image img {
+        display: none;
+    }
+
+    aside {
+        display: inline;
+        background-color: lightblue;
+        
+    }
+
 }
