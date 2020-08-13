@@ -5,6 +5,7 @@
 body {
     font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
+    background-image: url()
 }
 
 .logo {
@@ -32,7 +33,6 @@ aside {
 
 
 main {
-   
     width: 83%;
     margin: 0 auto;
     margin-top: 55px;   
@@ -63,8 +63,7 @@ p {
 
 .email {
     position: relative;
-    width: 100%;
-  
+    width: 100%; 
 }
 
 input {
@@ -94,7 +93,12 @@ button {
     background-image: linear-gradient(to right, rgba(248, 90, 90, 0), rgba(248, 135, 135, 1));
     border: none;
     cursor: pointer;
+    transition-duration: 0.4s;
     box-shadow: 3px 3px 3px 0px hsl(0, 39%, 91%);
+}
+
+button:hover {
+    background-color: rgba(248, 135, 135, 1);
 }
 
 footer {
@@ -117,46 +121,48 @@ footer {
 /*------------------------------- Desktop -----------------------------*/
 @media all and (min-width: 1200px) {
     body {
-            
+        background-image: url("../images/bg-pattern-desktop.svg");
+        background-size: cover;
     }
 
     .logo {
         width: 25%;
-        margin-left: 140px;
-        
+        margin-left: 165px;     
     }
 
     .logo img {
         width: 100%;
-        height: auto;
-       
+        height: auto;   
     }
         
     .left {
         float: left;
-        width: 50%;
-        margin-left: 30px;
+        width: 980px;
+        margin-left: 80px;
         margin-top: 60px;  
-        background-color: lightblue;
     }
 
-    main {
-        background-color: lightpink;
-        width: 70%;
-        
+    main { 
+        width: 66%;
+        margin-top: 120px;    
     }
 
     h1 {
         text-align: left;
-       
-        font-size: 4.5em;
-        
+        font-size: 4.5em;    
     }
 
     p {
         text-align: left;
-        font-size: 1.5em;
-       
+        font-size: 1.5em;   
+    }
+
+    input {
+        margin-top: 50px;
+    }
+
+    button {
+        margin-top: 50px;
     }
 
     .image img {
@@ -164,9 +170,22 @@ footer {
     }
 
     aside {
-        display: inline;
-        background-color: lightblue;
-        
+        display: inline;  
     }
 
+    aside img {
+        width: 700px;
+        height: auto;
+        margin-left: 13px;    
+    }
+
+    footer {
+        margin-top: -50px;
+        margin-left: 300px;
+        width: 30%;
+    }
+
+    footer .attribution {
+        font-size: 1em;
+    }
 }
